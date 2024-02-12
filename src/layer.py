@@ -7,8 +7,8 @@ class FeedForward:
         self.input = x
         self.num_nodes = num_nodes
         self.activation = activation_fn
-        self.weights = self.init_weights()
-        self.bias = self.init_bias()
+        self.weights = None
+        self.bias = None
         
     def init_weights(self):
         return np.random.random_sample((self.num_nodes, self.input.shape[-1]))
